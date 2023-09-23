@@ -1,0 +1,63 @@
+﻿<Window x:Class="GiveMeStatisticsVolleyball.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GiveMeStatisticsVolleyball"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="735" Width="1435" Background="#FF52EBFF">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Grid.RowSpan="7" Background="Orange" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnPlayer4" Grid.Column="0" Grid.Row="1" Margin="40" Background="DarkTurquoise" FontSize="30" Height="100" Width="100" Click="btnPlayer4_Click" >4</Button>
+            <Button x:Name="btnPlayer3" Grid.Column="1" Grid.Row="1" Margin="40" Background="DarkTurquoise" FontSize="30" Height="100" Width="100" Click="btnPlayer3_Click" >3</Button>
+            <Button x:Name="btnPlayer2" Grid.Column="2" Grid.Row="1" Margin="40" Background="DarkTurquoise" FontSize="30" Height="100" Width="100" Click="btnPlayer2_Click" >2</Button>
+            <Button x:Name="btnPlayer5" Grid.Column="0" Grid.Row="3" Margin="40" Background="DarkTurquoise" FontSize="30" Height="100" Width="100" Click="btnPlayer5_Click" >5</Button>
+            <Button x:Name="btnPlayer6" Grid.Column="1" Grid.Row="3" Margin="40" Background="DarkTurquoise" FontSize="30" Height="100" Width="100" Click="btnPlayer6_Click" >6</Button>
+            <Button x:Name="btnPlayer1" Grid.Column="2" Grid.Row="3" Margin="40" Background="DarkTurquoise" FontSize="30" Height="100" Width="100" Click="btnPlayer1_Click" >1</Button>
+            
+            <TextBox Grid.Row="0" Grid.ColumnSpan="3" Margin="0,30"></TextBox>
+            <TextBox Grid.Row="2" Grid.ColumnSpan="3" Margin="0,10" VerticalAlignment="Top"></TextBox>
+            
+        </Grid>
+        <TextBox  Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="NUMBER" FontSize="30"></TextBox>
+        <Button x:Name="btnСurrentPlayer"  Grid.Column="1" Grid.Row="3"  Margin="10" Background="DarkTurquoise" FontSize="30" Width="100" Height="100"></Button>
+
+        <Button x:Name="btnServe"  Grid.Column="2" Grid.Row="1" Background="Tomato"  Margin="10" FontSize="30" Click="btnServe_Click">SERVE</Button>
+        <Button x:Name="btnDig"  Grid.Column="2" Grid.Row="2" Background="Coral" Margin="10" FontSize="30" Click="btnDig_Click">DIG</Button>
+        <Button x:Name="btnSet"  Grid.Column="2" Grid.Row="3" Background="Gold" Margin="10" FontSize="30" Click="btnSet_Click">SET</Button>
+        <Button x:Name="btnSpike"  Grid.Column="2" Grid.Row="4" Background="Aquamarine" Margin="10" FontSize="30" Click="btnSpike_Click">SPIKE</Button>
+        <Button x:Name="btnBlock"  Grid.Column="2" Grid.Row="5" Background="Plum" Margin="10" FontSize="30" Click="btnBlock_Click">BLOCK</Button>
+
+        <Button x:Name="btnError"  Grid.Column="3" Grid.Row="2" Background="Red" Margin="10" FontSize="30" Click="btnError_Click" >ERROR</Button>
+        <Button x:Name="btnMade"  Grid.Column="3" Grid.Row="3" Background="LightSkyBlue" Margin="10" FontSize="30" Click="btnMade_Click" >MADE</Button>
+        <Button x:Name="btnPoint"  Grid.Column="3" Grid.Row="4" Background="SpringGreen" Margin="10" FontSize="30" Click="btnPoint_Click" >POINT</Button>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>
