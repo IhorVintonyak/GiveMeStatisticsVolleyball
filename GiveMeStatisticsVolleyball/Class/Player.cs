@@ -35,8 +35,8 @@ namespace GiveMeStatisticsVolleyball.Class
 
         public Player(string name, int number)
         {
-            this.name = name;
-            this.number = number;
+            this.Name = name;
+            this.Number = number;
 
             this.Dig = 0;  
             this.Spike = 0;
@@ -74,6 +74,8 @@ namespace GiveMeStatisticsVolleyball.Class
         public int PointServe { get => pointServe; set => pointServe = value; }
         public int PointSet { get => pointSet; set => pointSet = value; }
         public int PointBlock { get => pointBlock; set => pointBlock = value; }
+        public string Name { get => name; set => name = value; }
+        public int Number { get => number; set => number = value; }
 
         public void doDig(bool point,bool error)
         {
