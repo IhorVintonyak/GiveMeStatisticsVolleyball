@@ -218,8 +218,12 @@ namespace GiveMeStatisticsVolleyball
                     sw.WriteLine("Done! ");
                     */
                     sw.WriteLine(player1.ToString());
+                    sw.WriteLine(player2.ToString());
+                    sw.WriteLine(player3.ToString());
+                    sw.WriteLine(player4.ToString());
+                    sw.WriteLine(player5.ToString());
+                    sw.WriteLine(player6.ToString());
 
-                    
                 }
 
                 // Write file contents on console.

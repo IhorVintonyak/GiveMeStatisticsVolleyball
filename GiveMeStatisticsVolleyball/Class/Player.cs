@@ -151,7 +151,9 @@ namespace GiveMeStatisticsVolleyball.Class
         public override string? ToString()
         {
             //I want to return "PLAYER_NAME     sum_point   sum_made    sum_error"
-            return base.ToString();
+
+            return name + ". Points: " + points + ". Errors: " + (errorBlock + errorDig + errorServe + errorSet + errorSpike) + ". Made: " + (spike + set + serve + dig + block); ;
+            //return base.ToString();
         }
     }
 }
